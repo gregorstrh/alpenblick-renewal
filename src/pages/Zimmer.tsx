@@ -3,7 +3,8 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Bed, Wifi, Coffee, Tv, Phone } from "lucide-react";
-import zimmerImage from "@/assets/zimmer-room.jpg";
+import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
+import suiteImage from "@/assets/alpenblick-suite.jpg";
 
 const Zimmer = () => {
   return (
@@ -74,10 +75,15 @@ const Zimmer = () => {
 
           {/* Room Details */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="relative">
+            <div className="relative space-y-4">
               <img 
                 src={zimmerImage} 
                 alt="Zimmer im Gasthof Alpenblick" 
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
+              />
+              <img 
+                src={suiteImage} 
+                alt="Suite im Gasthof Alpenblick" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
             </div>

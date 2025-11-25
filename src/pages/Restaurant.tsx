@@ -3,8 +3,8 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { UtensilsCrossed, Award, Download } from "lucide-react";
-import restaurantImage from "@/assets/restaurant-interior.jpg";
-import foodImage from "@/assets/food-traditional.jpg";
+import restaurantImage from "@/assets/bachus-lounge.jpg";
+import foodImage from "@/assets/kulinarischer-kalender.jpg";
 
 const Restaurant = () => {
   return (
@@ -104,6 +104,24 @@ const Restaurant = () => {
               </div>
             </div>
           </Card>
+
+          {/* Video Section */}
+          <div className="mt-12">
+            <h3 className="font-display text-3xl font-bold mb-6 text-center text-primary">
+              Unser Gasthof im Video
+            </h3>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
+                  src="https://www.youtube.com/embed/V8r23RIFiK8"
+                  title="Gasthof Alpenblick Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
 
           {/* Menu Download Section */}
           <div className="mt-12 text-center">

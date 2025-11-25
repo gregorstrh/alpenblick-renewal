@@ -3,8 +3,8 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Calendar, Users, Utensils, PartyPopper, Phone } from "lucide-react";
-import foodImage from "@/assets/food-traditional.jpg";
-import restaurantImage from "@/assets/restaurant-interior.jpg";
+import foodImage from "@/assets/kulinarischer-kalender.jpg";
+import restaurantImage from "@/assets/bachus-lounge.jpg";
 
 const Veranstaltungen = () => {
   return (
