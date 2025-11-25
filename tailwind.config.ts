@@ -13,7 +13,18 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['Playfair Display', 'serif'],
+        body: ['Inter', 'sans-serif'],
+      },
       colors: {
+        'alpine-green': 'hsl(var(--alpine-green))',
+        'alpine-green-light': 'hsl(var(--alpine-green-light))',
+        'alpine-beige': 'hsl(var(--alpine-beige))',
+        'alpine-cream': 'hsl(var(--alpine-cream))',
+        'alpine-gold': 'hsl(var(--alpine-gold))',
+        'alpine-wood': 'hsl(var(--alpine-wood))',
+        'alpine-sage': 'hsl(var(--alpine-sage))',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
