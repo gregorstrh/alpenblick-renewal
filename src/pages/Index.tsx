@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, UtensilsCrossed, Bed, Calendar, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-alpenblick.jpg";
-import restaurantImage from "@/assets/restaurant-interior.jpg";
-import zimmerImage from "@/assets/zimmer-room.jpg";
-import foodImage from "@/assets/food-traditional.jpg";
+import heroImage from "@/assets/bachus-lounge.jpg";
+import restaurantImage from "@/assets/bachus-lounge.jpg";
+import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
+import foodImage from "@/assets/kulinarischer-kalender.jpg";
 
 const Index = () => {
   return (
