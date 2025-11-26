@@ -27,9 +27,6 @@ const Index = () => {
           <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 animate-in fade-in duration-700">
             Willkommen im<br />Gasthof Alpenblick
           </h1>
-          <p className="text-xl md:text-2xl mb-8 font-light animate-in fade-in duration-700 delay-150">
-            Tradition trifft Genuss – Ihr gemütliches Refugium in Kirchschlag
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in duration-700 delay-300">
             <Button size="lg" variant="secondary" asChild className="text-base">
               <a href="tel:+4372592552">
