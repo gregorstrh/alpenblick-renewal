@@ -14,8 +14,8 @@ export const Footer = () => {
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p>Gasthof Alpenblick</p>
-                  <p>Rohrach 8</p>
-                  <p>4202 Kirchschlag bei Linz</p>
+                  <p>Frauenhofenstraße 23</p>
+                  <p>A-4523 Sierning/Neuzeug</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
