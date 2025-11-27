@@ -177,7 +177,7 @@ const Links = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="mailto:info@gasthof-alpenblick.at">
+                <a href="mailto:office@gasthof-alpenblick.at">
                   <Mail className="mr-2 h-5 w-5" />
                   E-Mail senden
                 </a>
