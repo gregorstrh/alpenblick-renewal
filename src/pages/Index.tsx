@@ -161,7 +161,7 @@ const Index = () => {
             Sichern Sie sich Ihren Platz in unserem gemütlichen Restaurant.<br />
             Abholung ist von 16:00 - 21:00 Uhr möglich.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" variant="secondary" asChild className="text-base">
               <a href="tel:+4372592552">
                 Anrufen: 07259/2552
@@ -171,6 +171,19 @@ const Index = () => {
               <Link to="/kontakt">
                 Kontakt aufnehmen
               </Link>
+            </Button>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <p className="text-lg opacity-90">Online reservieren:</p>
+            <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <a href="https://easy-booking.at" target="_blank" rel="noopener noreferrer">
+                Easy-Booking
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <a href="https://tablex.at" target="_blank" rel="noopener noreferrer">
+                Tablex
+              </a>
             </Button>
           </div>
         </div>
