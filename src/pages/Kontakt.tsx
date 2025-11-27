@@ -96,10 +96,10 @@ const Kontakt = () => {
                     <div>
                       <h3 className="font-semibold mb-1">E-Mail</h3>
                       <a 
-                        href="mailto:info@gasthof-alpenblick.at" 
+                        href="mailto:office@gasthof-alpenblick.at" 
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        info@gasthof-alpenblick.at
+                        office@gasthof-alpenblick.at
                       </a>
                     </div>
                   </div>
