@@ -26,8 +26,8 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <a href="mailto:info@gasthof-alpenblick.at" className="hover:text-accent transition-colors">
-                  info@gasthof-alpenblick.at
+                <a href="mailto:office@gasthof-alpenblick.at" className="hover:text-accent transition-colors">
+                  office@gasthof-alpenblick.at
                 </a>
               </div>
             </div>
