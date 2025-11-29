@@ -18,8 +18,8 @@ export default {
         body: ['Inter', 'sans-serif'],
       },
       colors: {
-        'alpine-green': 'hsl(var(--alpine-green))',
-        'alpine-green-light': 'hsl(var(--alpine-green-light))',
+        'alpine-red': 'hsl(var(--alpine-red))',
+        'alpine-red-light': 'hsl(var(--alpine-red-light))',
         'alpine-beige': 'hsl(var(--alpine-beige))',
         'alpine-cream': 'hsl(var(--alpine-cream))',
         'alpine-gold': 'hsl(var(--alpine-gold))',
