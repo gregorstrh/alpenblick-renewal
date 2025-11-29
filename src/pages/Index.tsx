@@ -8,6 +8,7 @@ import heroImage from "@/assets/bachus-lounge.jpg";
 import restaurantImage from "@/assets/bachus-lounge.jpg";
 import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
 import foodImage from "@/assets/kulinarischer-kalender.jpg";
+import bachusLogo from "@/assets/bachus-lounge-logo.png";
 
 const Index = () => {
   return (
@@ -27,6 +28,13 @@ const Index = () => {
           <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 animate-in fade-in duration-700">
             Willkommen im<br />Gasthof Alpenblick
           </h1>
+          <Link to="/restaurant" className="inline-block mb-6 animate-in fade-in duration-700 delay-150">
+            <img 
+              src={bachusLogo} 
+              alt="Bachus-Lounge Logo" 
+              className="h-24 md:h-32 mx-auto hover:scale-105 transition-transform duration-300"
+            />
+          </Link>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in duration-700 delay-300">
             <Button size="lg" variant="secondary" asChild className="text-base">
               <a href="tel:+4372592552">

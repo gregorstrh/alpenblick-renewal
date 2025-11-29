@@ -2,9 +2,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { UtensilsCrossed, Award, Download } from "lucide-react";
+import { UtensilsCrossed, Award, Download, Wine } from "lucide-react";
 import restaurantImage from "@/assets/bachus-lounge.jpg";
 import foodImage from "@/assets/kulinarischer-kalender.jpg";
+import bachusLogo from "@/assets/bachus-lounge-logo.png";
 
 const Restaurant = () => {
   return (
@@ -136,6 +137,34 @@ const Restaurant = () => {
               <Download className="mr-2 h-5 w-5" />
               Speisekarte herunterladen (PDF)
             </Button>
+          </div>
+
+          {/* Bachus-Lounge Section */}
+          <div className="mt-16 bg-secondary text-secondary-foreground rounded-lg p-12">
+            <div className="flex flex-col items-center text-center">
+              <img 
+                src={bachusLogo} 
+                alt="Bachus-Lounge Logo" 
+                className="h-32 md:h-40 mb-8"
+              />
+              <h3 className="font-display text-3xl md:text-4xl font-bold mb-4">
+                Bachus-Lounge
+              </h3>
+              <p className="text-xl mb-6 italic">
+                "Die Weinbar & Vinothek"
+              </p>
+              <div className="max-w-3xl space-y-4 text-lg leading-relaxed">
+                <p>
+                  Genießen Sie im modernem Ambiente beste österreichische Weine.
+                </p>
+                <p>
+                  Wir bieten unsere Topweine auch glasweise zum Verkosten oder auch in Zusammenarbeit 
+                  mit unseren Winzer und Lieferanten auch für Ihre Vinothek oder Ihr Fest zu den 
+                  Abhofpreisen der Winzern an!!
+                </p>
+              </div>
+              <Wine className="h-12 w-12 mt-8 text-accent" />
+            </div>
           </div>
 
           {/* Reservation CTA */}
