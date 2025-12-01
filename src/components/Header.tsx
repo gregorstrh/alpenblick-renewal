@@ -18,7 +18,7 @@ export const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm shadow-sm z-50 border-b border-border">
+    <header className="fixed top-0 w-full bg-white shadow-sm z-50 border-b border-border">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
