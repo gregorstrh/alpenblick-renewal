@@ -24,19 +24,21 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
         
+        {/* Bachus Lounge Logo - Top Right */}
+        <Link to="/restaurant" className="absolute top-6 right-6 z-20 animate-in fade-in duration-700 delay-150">
+          <div className="bg-black/80 backdrop-blur-sm rounded-lg px-5 py-3 border border-white/10 shadow-lg hover:bg-black/90 transition-all duration-300 hover:scale-105">
+            <img 
+              src={bachusLogo} 
+              alt="Bachus-Lounge Logo" 
+              className="h-20 md:h-28"
+            />
+          </div>
+        </Link>
+        
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto text-primary-foreground">
-          <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 animate-in fade-in duration-700">
+          <h1 className="font-display text-5xl md:text-7xl font-bold mb-8 animate-in fade-in duration-700">
             Willkommen im<br />Gasthof Alpenblick
           </h1>
-          <Link to="/restaurant" className="inline-block mb-6 animate-in fade-in duration-700 delay-150">
-            <div className="bg-black/80 backdrop-blur-sm rounded-lg px-6 py-4 border border-white/10 shadow-lg hover:bg-black/90 transition-all duration-300 hover:scale-105">
-              <img 
-                src={bachusLogo} 
-                alt="Bachus-Lounge Logo" 
-                className="h-16 md:h-20 mx-auto"
-              />
-            </div>
-          </Link>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in duration-700 delay-300">
             <Button size="lg" variant="secondary" asChild className="text-base">
               <a href="tel:+4372592552">
