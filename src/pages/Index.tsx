@@ -29,11 +29,13 @@ const Index = () => {
             Willkommen im<br />Gasthof Alpenblick
           </h1>
           <Link to="/restaurant" className="inline-block mb-6 animate-in fade-in duration-700 delay-150">
-            <img 
-              src={bachusLogo} 
-              alt="Bachus-Lounge Logo" 
-              className="h-24 md:h-32 mx-auto hover:scale-105 transition-transform duration-300"
-            />
+            <div className="bg-black/80 backdrop-blur-sm rounded-lg px-6 py-4 border border-white/10 shadow-lg hover:bg-black/90 transition-all duration-300 hover:scale-105">
+              <img 
+                src={bachusLogo} 
+                alt="Bachus-Lounge Logo" 
+                className="h-16 md:h-20 mx-auto"
+              />
+            </div>
           </Link>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in duration-700 delay-300">
             <Button size="lg" variant="secondary" asChild className="text-base">
