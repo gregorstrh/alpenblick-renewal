@@ -8,7 +8,7 @@ import heroImage from "@/assets/bachus-lounge.jpg";
 import restaurantImage from "@/assets/bachus-lounge.jpg";
 import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
 import foodImage from "@/assets/kulinarischer-kalender.jpg";
-import bachusLogo from "@/assets/bachus-lounge-logo.jpg";
+import bachusLogo from "@/assets/bachus-lounge-logo-negativ.png";
 
 const Index = () => {
   return (
