@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { UtensilsCrossed, Award, Download, Wine } from "lucide-react";
 import restaurantImage from "@/assets/bachus-lounge.jpg";
 import foodImage from "@/assets/kulinarischer-kalender.jpg";
-import bachusLogo from "@/assets/bachus-lounge-logo.png";
+import bachusLogo from "@/assets/bachus-lounge-logo.jpg";
 
 const Restaurant = () => {
   return (
