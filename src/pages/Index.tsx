@@ -10,6 +10,7 @@ import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
 import foodImage from "@/assets/kulinarischer-kalender.jpg";
 import bachusLogo from "@/assets/bachus-lounge-logo-negativ.png";
 import { EasyBookingWidget } from "@/components/EasyBookingWidget";
+import { EasyBookingFrontend } from "@/components/EasyBookingFrontend";
 
 const Index = () => {
   return (
@@ -195,10 +196,14 @@ const Index = () => {
             </Button>
           </div>
           
-          {/* Easy-Booking Widget */}
+          {/* Easy-Booking Widgets */}
           <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-lg p-6">
             <h3 className="text-xl font-semibold mb-4">Easy-Booking Reservierung</h3>
             <EasyBookingWidget />
+          </div>
+          <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <h3 className="text-xl font-semibold mb-4">Easy-Booking Buchung</h3>
+            <EasyBookingFrontend />
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-4">
             <p className="text-lg opacity-90">Buchung verwalten:</p>
