@@ -188,7 +188,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <p className="text-lg opacity-90">Online reservieren:</p>
             <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <a href="https://easy-booking.at" target="_blank" rel="noopener noreferrer">
+              <a href="https://bookingmanager.easy-booking.at/11693/2" target="_blank" rel="noopener noreferrer">
                 Easy-Booking
               </a>
             </Button>
