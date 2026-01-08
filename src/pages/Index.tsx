@@ -9,6 +9,7 @@ import restaurantImage from "@/assets/bachus-lounge.jpg";
 import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
 import foodImage from "@/assets/kulinarischer-kalender.jpg";
 import bachusLogo from "@/assets/bachus-lounge-logo-negativ.png";
+import { EasyBookingWidget } from "@/components/EasyBookingWidget";
 
 const Index = () => {
   return (
@@ -188,15 +189,16 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <p className="text-lg opacity-90">Online reservieren:</p>
             <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <a href="https://easy-booking.at" target="_blank" rel="noopener noreferrer">
-                Easy-Booking
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               <a href="https://tablex.at" target="_blank" rel="noopener noreferrer">
                 Tablex
               </a>
             </Button>
+          </div>
+          
+          {/* Easy-Booking Widget */}
+          <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <h3 className="text-xl font-semibold mb-4">Easy-Booking Reservierung</h3>
+            <EasyBookingWidget />
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-4">
             <p className="text-lg opacity-90">Buchung verwalten:</p>
