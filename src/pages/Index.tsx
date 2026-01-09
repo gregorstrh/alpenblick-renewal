@@ -196,7 +196,7 @@ const Index = () => {
           </div>
           
           {/* Easy-Booking Widgets */}
-          <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-lg p-6">
+          <div className="mt-8 bg-background rounded-lg p-6">
             <h3 className="text-xl font-semibold mb-4">Easy-Booking Buchung</h3>
             <EasyBookingFrontend />
           </div>
