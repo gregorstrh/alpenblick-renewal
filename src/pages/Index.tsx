@@ -9,7 +9,6 @@ import restaurantImage from "@/assets/bachus-lounge.jpg";
 import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
 import foodImage from "@/assets/kulinarischer-kalender.jpg";
 import bachusLogo from "@/assets/bachus-lounge-logo-negativ.png";
-import { EasyBookingWidget } from "@/components/EasyBookingWidget";
 import { EasyBookingFrontend } from "@/components/EasyBookingFrontend";
 
 const Index = () => {
@@ -197,10 +196,6 @@ const Index = () => {
           </div>
           
           {/* Easy-Booking Widgets */}
-          <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <h3 className="text-xl font-semibold mb-4">Easy-Booking Reservierung</h3>
-            <EasyBookingWidget />
-          </div>
           <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-lg p-6">
             <h3 className="text-xl font-semibold mb-4">Easy-Booking Buchung</h3>
             <EasyBookingFrontend />
