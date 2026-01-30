@@ -118,8 +118,10 @@ const Links = () => {
                       <p className="text-sm text-muted-foreground">PDF Dokument</p>
                     </div>
                   </div>
-                  <Button variant="default" className="bg-primary hover:bg-primary/90">
-                    Download
+                  <Button variant="default" asChild className="bg-primary hover:bg-primary/90">
+                    <a href="https://www.gasthof-alpenblick.at/downloads/2014_kulinarischerKalender_GHAlpenblick.pdf" target="_blank" rel="noopener noreferrer">
+                      Download
+                    </a>
                   </Button>
                 </div>
               </Card>
@@ -135,8 +137,10 @@ const Links = () => {
                       <p className="text-sm text-muted-foreground">PDF Dokument</p>
                     </div>
                   </div>
-                  <Button variant="default" className="bg-primary hover:bg-primary/90">
-                    Download
+                  <Button variant="default" asChild className="bg-primary hover:bg-primary/90">
+                    <a href="https://www.gasthof-alpenblick.at/downloads/Speisekarte_GHAlpenblick.pdf" target="_blank" rel="noopener noreferrer">
+                      Download
+                    </a>
                   </Button>
                 </div>
               </Card>
@@ -152,8 +156,10 @@ const Links = () => {
                       <p className="text-sm text-muted-foreground">PDF Dokument</p>
                     </div>
                   </div>
-                  <Button variant="default" className="bg-primary hover:bg-primary/90">
-                    Download
+                  <Button variant="default" asChild className="bg-primary hover:bg-primary/90">
+                    <a href="https://www.gasthof-alpenblick.at/downloads/AMA_Genusswirt_GH_Alpenblick.pdf" target="_blank" rel="noopener noreferrer">
+                      Download
+                    </a>
                   </Button>
                 </div>
               </Card>
