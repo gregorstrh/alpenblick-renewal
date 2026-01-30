@@ -181,9 +181,9 @@ const Index = () => {
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <Link to="/kontakt">
-                Kontakt aufnehmen
-              </Link>
+              <a href="mailto:office@gasthof-alpenblick.at">
+                E-Mail schreiben
+              </a>
             </Button>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

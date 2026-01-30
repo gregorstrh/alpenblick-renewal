@@ -71,9 +71,6 @@ export const Footer = () => {
               <Link to="/links" className="block hover:text-accent transition-colors">
                 Links
               </Link>
-              <Link to="/kontakt" className="block hover:text-accent transition-colors">
-                Kontakt
-              </Link>
               <Link to="/impressum" className="block hover:text-accent transition-colors">
                 Impressum
               </Link>

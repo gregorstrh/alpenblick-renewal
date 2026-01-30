@@ -10,7 +10,6 @@ const navigation = [
   { name: "Zimmer", href: "/zimmer" },
   { name: "Veranstaltungen", href: "/veranstaltungen" },
   { name: "Links", href: "/links" },
-  { name: "Kontakt", href: "/kontakt" },
 ];
 
 export const Header = () => {
