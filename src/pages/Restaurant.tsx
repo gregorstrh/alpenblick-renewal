@@ -133,9 +133,11 @@ const Restaurant = () => {
               Entdecken Sie unsere vielfältige Auswahl an traditionellen österreichischen Gerichten 
               und regionalen Spezialitäten.
             </p>
-            <Button size="lg" variant="default" className="bg-primary hover:bg-primary/90">
-              <Download className="mr-2 h-5 w-5" />
-              Speisekarte herunterladen (PDF)
+            <Button size="lg" variant="default" className="bg-primary hover:bg-primary/90" asChild>
+              <a href="https://www.gasthof-alpenblick.at/downloads/Speisekarte_GHAlpenblick.pdf" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-5 w-5" />
+                Speisekarte herunterladen (PDF)
+              </a>
             </Button>
           </div>
 

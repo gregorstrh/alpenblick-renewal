@@ -203,8 +203,8 @@ const Veranstaltungen = () => {
                 asChild 
                 className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
               >
-                <a href="/kontakt">
-                  Kontaktformular
+                <a href="mailto:office@gasthof-alpenblick.at">
+                  E-Mail schreiben
                 </a>
               </Button>
             </div>
