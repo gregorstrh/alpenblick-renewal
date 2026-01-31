@@ -119,7 +119,7 @@ const Links = () => {
                     </div>
                   </div>
                   <Button variant="default" asChild className="bg-primary hover:bg-primary/90">
-                    <a href="https://www.gasthof-alpenblick.at/downloads/2014_kulinarischerKalender_GHAlpenblick.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/downloads/2014_kulinarischerKalender_GHAlpenblick.pdf" target="_blank" rel="noopener noreferrer">
                       Download
                     </a>
                   </Button>
@@ -138,7 +138,7 @@ const Links = () => {
                     </div>
                   </div>
                   <Button variant="default" asChild className="bg-primary hover:bg-primary/90">
-                    <a href="https://www.gasthof-alpenblick.at/downloads/Speisekarte_GHAlpenblick.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/downloads/Speisekarte_GHAlpenblick.pdf" target="_blank" rel="noopener noreferrer">
                       Download
                     </a>
                   </Button>
@@ -157,7 +157,7 @@ const Links = () => {
                     </div>
                   </div>
                   <Button variant="default" asChild className="bg-primary hover:bg-primary/90">
-                    <a href="https://www.gasthof-alpenblick.at/downloads/AMA_Genusswirt_GH_Alpenblick.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/downloads/AMA_Genusswirt_GH_Alpenblick.pdf" target="_blank" rel="noopener noreferrer">
                       Download
                     </a>
                   </Button>
