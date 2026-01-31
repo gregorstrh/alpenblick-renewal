@@ -142,7 +142,7 @@ const Restaurant = () => {
           </div>
 
           {/* Bachus-Lounge Section */}
-          <div className="mt-16 bg-secondary text-secondary-foreground rounded-lg p-12">
+          <div className="mt-16 bg-black text-white rounded-lg p-12">
             <div className="flex flex-col items-center text-center">
               <img 
                 src={bachusLogo} 
