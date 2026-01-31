@@ -9,7 +9,7 @@ import restaurantImage from "@/assets/bachus-lounge.jpg";
 import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
 import foodImage from "@/assets/kulinarischer-kalender.jpg";
 import bachusLogo from "@/assets/bachus-lounge-logo-negativ.png";
-import { EasyBookingFrontend } from "@/components/EasyBookingFrontend";
+
 
 const Index = () => {
   return (
@@ -183,28 +183,6 @@ const Index = () => {
             <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               <a href="mailto:office@gasthof-alpenblick.at">
                 E-Mail schreiben
-              </a>
-            </Button>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <p className="text-lg opacity-90">Online reservieren:</p>
-            <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <a href="https://tablex.at" target="_blank" rel="noopener noreferrer">
-                Tablex
-              </a>
-            </Button>
-          </div>
-          
-          {/* Easy-Booking Widgets */}
-          <div className="mt-8 bg-background rounded-lg p-6">
-            <h3 className="text-xl font-semibold mb-4">Easy-Booking Buchung</h3>
-            <EasyBookingFrontend />
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-4">
-            <p className="text-lg opacity-90">Buchung verwalten:</p>
-            <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <a href="https://bookingmanager.easy-booking.at/11693/2" target="_blank" rel="noopener noreferrer">
-                Easy-Booking Manager
               </a>
             </Button>
           </div>

@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Bed, Wifi, Coffee, Tv, Phone } from "lucide-react";
 import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
 import suiteImage from "@/assets/alpenblick-suite.jpg";
+import { EasyBookingFrontend } from "@/components/EasyBookingFrontend";
 
 const Zimmer = () => {
   return (
@@ -186,10 +187,16 @@ const Zimmer = () => {
                 asChild 
                 className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
               >
-                <a href="/#easy-booking">
-                  Easy-Booking
+                <a href="https://bookingmanager.easy-booking.at/11693/2" target="_blank" rel="noopener noreferrer">
+                  Easy-Booking Manager
                 </a>
               </Button>
+            </div>
+            
+            {/* Easy-Booking Widget */}
+            <div className="mt-8 bg-background rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-foreground mb-4">Easy-Booking Buchung</h3>
+              <EasyBookingFrontend />
             </div>
           </div>
         </div>
