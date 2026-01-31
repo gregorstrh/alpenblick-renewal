@@ -178,6 +178,19 @@ const Zimmer = () => {
                 </a>
               </Button>
             </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6">
+              <p className="text-lg opacity-90">Online buchen:</p>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                asChild 
+                className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              >
+                <a href="/#easy-booking">
+                  Easy-Booking
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
