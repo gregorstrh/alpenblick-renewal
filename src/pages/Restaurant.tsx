@@ -69,11 +69,11 @@ const Restaurant = () => {
               </div>
             </div>
             
-            <div className="relative">
-              <img 
-                src={foodImage} 
-                alt="Traditionelle österreichische Küche" 
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
+            <div className="relative rounded-lg shadow-xl overflow-hidden bg-white" style={{ height: '500px' }}>
+              <iframe
+                src="/downloads/kulinarischer-kalender-2024.pdf"
+                className="w-full h-full"
+                title="Kulinarischer Kalender"
               />
             </div>
           </div>
