@@ -174,6 +174,19 @@ const Index = () => {
             Sichern Sie sich Ihren Platz in unserem gemütlichen Restaurant.<br />
             Abholung ist von 16:00 - 21:00 Uhr möglich.
           </p>
+          
+          {/* Tablex Reservation Widget */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-lg mb-8">
+            <iframe 
+              src="https://tablexpro.at/4.0/index.php?txfe_gastronomie=48oonb8zvkl4eccczdwkhx49st" 
+              width="100%" 
+              height="900" 
+              frameBorder="0"
+              title="Tischreservierung"
+              className="w-full"
+            />
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" variant="secondary" asChild className="text-base">
               <a href="tel:+4372592552">
