@@ -2,7 +2,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { UtensilsCrossed, Award, Download, Wine } from "lucide-react";
+import { UtensilsCrossed, Award, Download, Wine, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import restaurantImage from "@/assets/bachus-lounge.jpg";
 import foodImage from "@/assets/kulinarischer-kalender.jpg";
 import bachusLogo from "@/assets/bachus-lounge-logo.jpg";
@@ -180,8 +181,14 @@ const Restaurant = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
+                <Link to="/#tischreservierung">
+                  Zur Online-Reservierung
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 <a href="tel:+4372592552">
-                  Jetzt anrufen: 07259/2552
+                  Anrufen: 07259/2552
                 </a>
               </Button>
             </div>
