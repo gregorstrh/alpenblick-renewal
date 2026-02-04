@@ -180,7 +180,7 @@ const Index = () => {
             <iframe 
               src="https://tablexpro.at/4.0/index.php?txfe_gastronomie=48oonb8zvkl4eccczdwkhx49st" 
               width="100%" 
-              height="900" 
+              height="600" 
               frameBorder="0"
               title="Tischreservierung"
               className="w-full"
