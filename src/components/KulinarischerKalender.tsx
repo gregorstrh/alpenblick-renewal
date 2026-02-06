@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { ChevronLeft, ChevronRight, Download } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
+import { ChevronLeft, ChevronRight, Download, Play, Pause } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import kalender01 from "@/assets/kalender/kalender-01.png";
@@ -34,15 +34,39 @@ const kalenderImages = [
   kalender14,
 ];
 
+const AUTOPLAY_INTERVAL = 4000; // 4 seconds
+
 export const KulinarischerKalender = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
 
-  const goToPrevious = () => {
+  const goToPrevious = useCallback(() => {
     setCurrentIndex((prev) => (prev === 0 ? kalenderImages.length - 1 : prev - 1));
+  }, []);
+
+  const goToNext = useCallback(() => {
+    setCurrentIndex((prev) => (prev === kalenderImages.length - 1 ? 0 : prev + 1));
+  }, []);
+
+  const toggleAutoplay = () => {
+    setIsPlaying((prev) => !prev);
   };
 
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev === kalenderImages.length - 1 ? 0 : prev + 1));
+  // Autoplay effect
+  useEffect(() => {
+    if (!isPlaying) return;
+    
+    const interval = setInterval(() => {
+      goToNext();
+    }, AUTOPLAY_INTERVAL);
+
+    return () => clearInterval(interval);
+  }, [isPlaying, goToNext]);
+
+  // Pause autoplay on user interaction
+  const handleManualNavigation = (action: () => void) => {
+    setIsPlaying(false);
+    action();
   };
 
   return (
@@ -65,18 +89,27 @@ export const KulinarischerKalender = () => {
           
           {/* Navigation Arrows */}
           <button
-            onClick={goToPrevious}
+            onClick={() => handleManualNavigation(goToPrevious)}
             className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-colors"
             aria-label="Vorheriges Bild"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
           <button
-            onClick={goToNext}
+            onClick={() => handleManualNavigation(goToNext)}
             className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-colors"
             aria-label="Nächstes Bild"
           >
             <ChevronRight className="h-6 w-6" />
+          </button>
+          
+          {/* Autoplay Toggle */}
+          <button
+            onClick={toggleAutoplay}
+            className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+            aria-label={isPlaying ? "Autoplay pausieren" : "Autoplay starten"}
+          >
+            {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
           </button>
           
           {/* Page Indicator */}
@@ -90,7 +123,10 @@ export const KulinarischerKalender = () => {
           {kalenderImages.map((img, index) => (
             <button
               key={index}
-              onClick={() => setCurrentIndex(index)}
+              onClick={() => {
+                setIsPlaying(false);
+                setCurrentIndex(index);
+              }}
               className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${
                 index === currentIndex
                   ? "border-primary shadow-lg scale-105"
