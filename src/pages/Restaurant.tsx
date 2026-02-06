@@ -5,8 +5,8 @@ import { Card } from "@/components/ui/card";
 import { UtensilsCrossed, Award, Download, Wine, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import restaurantImage from "@/assets/bachus-lounge.jpg";
-import foodImage from "@/assets/kulinarischer-kalender.jpg";
 import bachusLogo from "@/assets/bachus-lounge-logo.jpg";
+import { KulinarischerKalender } from "@/components/KulinarischerKalender";
 
 const Restaurant = () => {
   return (
@@ -69,21 +69,8 @@ const Restaurant = () => {
               </div>
             </div>
             
-            <div className="relative">
-              <img 
-                src={foodImage} 
-                alt="Kulinarischer Kalender" 
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
-              <a 
-                href="/downloads/kulinarischer-kalender-2024.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="absolute bottom-4 right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-lg hover:bg-primary/90 transition-colors flex items-center gap-2"
-              >
-                <Download className="h-4 w-4" />
-                PDF ansehen
-              </a>
+            <div className="flex items-center justify-center">
+              <Award className="h-32 w-32 text-primary/20" />
             </div>
           </div>
 
@@ -116,8 +103,11 @@ const Restaurant = () => {
             </div>
           </Card>
 
+          {/* Kulinarischer Kalender */}
+          <KulinarischerKalender />
+
           {/* Video Section */}
-          <div className="mt-12">
+          <div className="mt-16">
             <h3 className="font-display text-3xl font-bold mb-6 text-center text-primary">
               Unser Gasthof im Video
             </h3>
