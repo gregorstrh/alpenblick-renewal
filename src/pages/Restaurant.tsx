@@ -36,8 +36,7 @@ const Restaurant = () => {
       {/* Main Content */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div>
+          <div className="text-center max-w-3xl mx-auto">
               <h2 className="font-display text-4xl font-bold mb-6 text-primary">
                 Kulinarische Genüsse
               </h2>
@@ -57,8 +56,8 @@ const Restaurant = () => {
                 </p>
               </div>
               
-              <div className="mt-8 p-6 bg-accent/10 rounded-lg border-2 border-accent/20">
-                <div className="flex items-center mb-4">
+              <div className="mt-8 p-6 bg-accent/10 rounded-lg border-2 border-accent/20 inline-block">
+                <div className="flex items-center mb-4 justify-center">
                   <Award className="h-8 w-8 text-accent mr-3" />
                   <h3 className="font-display text-xl font-semibold">AMA-Gastrosiegel</h3>
                 </div>
@@ -67,11 +66,6 @@ const Restaurant = () => {
                   Wir sind stolz auf diese Auszeichnung für regionale Qualität.
                 </p>
               </div>
-            </div>
-            
-            <div className="flex items-center justify-center">
-              <Award className="h-32 w-32 text-primary/20" />
-            </div>
           </div>
 
           {/* Opening Hours Section */}
