@@ -5,9 +5,9 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, UtensilsCrossed, Bed, Calendar, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/bachus-lounge.jpg";
-import restaurantImage from "@/assets/bachus-lounge.jpg";
+import restaurantImage from "@/assets/restaurant-card.jpg";
 import zimmerImage from "@/assets/alpenblick-zimmer.jpg";
-import foodImage from "@/assets/kulinarischer-kalender.jpg";
+import foodImage from "@/assets/veranstaltungen-card.jpg";
 import bachusLogo from "@/assets/bachus-lounge-logo-negativ.png";
 
 
