@@ -42,15 +42,15 @@ const Index = () => {
           </h1>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in duration-700 delay-300">
             <Button size="lg" variant="secondary" asChild className="text-base">
-              <a href="tel:+4372592552">
+              <a href="#tischreservierung">
                 Tisch Reservieren
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <Link to="/restaurant">
+              <a href="/downloads/Speisekarte_GHAlpenblick.pdf" target="_blank" rel="noopener noreferrer">
                 Speisekarte Ansehen
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
