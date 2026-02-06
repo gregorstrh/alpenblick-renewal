@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { UtensilsCrossed, Award, Download, Wine, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import restaurantImage from "@/assets/bachus-lounge.jpg";
+import restaurantImage from "@/assets/restaurant-card.jpg";
 import bachusLogo from "@/assets/bachus-lounge-logo.jpg";
 import { KulinarischerKalender } from "@/components/KulinarischerKalender";
 
