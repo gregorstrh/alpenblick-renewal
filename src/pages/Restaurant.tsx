@@ -5,7 +5,8 @@ import { Card } from "@/components/ui/card";
 import { UtensilsCrossed, Award, Download, Wine, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import restaurantImage from "@/assets/restaurant-card.jpg";
-import bachusLogo from "@/assets/bachus-lounge-logo.jpg";
+import bachusLogo from "@/assets/bachus-lounge-logo-negativ-new.png";
+import bachusLoungeBg from "@/assets/bachus-lounge-bg.jpg";
 import { KulinarischerKalender } from "@/components/KulinarischerKalender";
 
 const Restaurant = () => {
@@ -136,8 +137,14 @@ const Restaurant = () => {
           </div>
 
           {/* Bachus-Lounge Section */}
-          <div className="mt-16 bg-black text-white rounded-lg p-12">
-            <div className="flex flex-col items-center text-center">
+          <div className="mt-16 relative text-white rounded-lg p-12 overflow-hidden">
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${bachusLoungeBg})` }}
+            >
+              <div className="absolute inset-0 bg-black/70" />
+            </div>
+            <div className="flex flex-col items-center text-center relative z-10">
               <img 
                 src={bachusLogo} 
                 alt="Bachus-Lounge Logo" 
