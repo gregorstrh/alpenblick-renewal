@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Calendar, Users, Utensils, PartyPopper, Phone } from "lucide-react";
-import foodImage from "@/assets/kulinarischer-kalender.jpg";
+
 import restaurantImage from "@/assets/veranstaltungen-card.jpg";
 
 const Veranstaltungen = () => {
@@ -96,17 +96,8 @@ const Veranstaltungen = () => {
           </div>
 
           {/* Catering Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="relative order-2 lg:order-1">
-              <img 
-                src={foodImage} 
-                alt="Catering vom Gasthof Alpenblick" 
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
-            </div>
-            
-            <div className="order-1 lg:order-2">
-              <Utensils className="h-12 w-12 text-primary mb-4" />
+          <div className="text-center max-w-3xl mx-auto mb-16">
+              <Utensils className="h-12 w-12 text-primary mb-4 mx-auto" />
               <h3 className="font-display text-3xl font-bold mb-6 text-primary">
                 Catering & More
               </h3>
@@ -118,7 +109,7 @@ const Veranstaltungen = () => {
                 <p>
                   Wir bieten maßgeschneiderte Lösungen für:
                 </p>
-                <ul className="space-y-2 ml-4">
+                <ul className="space-y-2 inline-block text-left">
                   <li className="flex items-start">
                     <span className="text-accent mr-2 mt-1">•</span>
                     <span>Private Feiern zu Hause</span>
@@ -140,7 +131,6 @@ const Veranstaltungen = () => {
                   Kontaktieren Sie uns für ein individuelles Angebot!
                 </p>
               </div>
-            </div>
           </div>
 
           {/* Features */}
